@@ -33,94 +33,35 @@
                         </div>
                       </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Shooting </label>
+                        <label class="col-sm-2 control-label">Disiplin </label>
                         <div class="col-sm-12">
-                          <input type="number" class="form-control" name="shooting" min="0" step="1" max="100" placeholder="Masukkan nilai shooting"required>
+                          <input type="number" class="form-control" name="disiplin" min="0" step="1" max="100" placeholder="Masukkan nilai disiplin"required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Dribbling </label>
+                        <label class="col-sm-2 control-label">Kerja Sama TIm </label>
                         <div class="col-sm-12">
-                          <input type="number" class="form-control" name="dribbling" min="0" step="1" max="100" placeholder="Masukkan nilai dribbling"required>
+                          <input type="number" class="form-control" name="kerjasamatim" min="0" step="1" max="100" placeholder="Masukkan nilai kerjasamatim"required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Passing </label>
+                        <label class="col-sm-2 control-label">Sikap Profesional </label>
                         <div class="col-sm-12">
-                          <input type="number" class="form-control" name="passing" min="0" step="1" max="100" placeholder="Masukkan nilai passing"required>
+                          <input type="number" class="form-control" name="sikapprofesional" min="0" step="1" max="100" placeholder="Masukkan nilai sikapprofesional"required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Ball Control </label>
+                        <label class="col-sm-2 control-label">kreatifitas </label>
                         <div class="col-sm-12">
-                          <input type="number" class="form-control" name="ball_control" min="0" step="1" max="100" placeholder="Masukkan nilai ball control"required>
+                          <input type="number" class="form-control" name="kreatifitas" min="0" step="1" max="100" placeholder="Masukkan nilai kreatifitas"required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Heading </label>
+                        <label class="col-sm-2 control-label">Kinerja </label>
                         <div class="col-sm-12">
-                          <input type="number" class="form-control" name="heading" min="0" step="1" max="100" placeholder="Masukkan nilai heading"required>
+                          <input type="number" class="form-control" name="kinerja" min="0" step="1" max="100" placeholder="Masukkan nilai kinerja"required>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Positioning </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="positioning" min="0" step="1" max="100" placeholder="Masukkan nilai positioning"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Ball Position </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="ball_position" min="0" step="1" max="100" placeholder="Masukkan nilai ball position"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Transition Movement </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="transition_movement" min="0" step="1" max="100" placeholder="Masukkan nilai transition movement"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Speed </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="speed" min="0" step="1" max="100" placeholder="Masukkan nilai speed"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Coordination </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="coordination" min="0" step="1" max="100" placeholder="Masukkan nilai coordination"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Agility </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="agility" min="0" step="1" max="100" placeholder="Masukkan nilai agility"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Confidence </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="confidence" min="0" step="1" max="100" placeholder="Masukkan nilai confidence"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Concentration </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="concentration" min="0" step="1" max="100" placeholder="Masukkan nilai concentration"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Fairplay </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="fairplay" min="0" step="1" max="100" placeholder="Masukkan nilai fairplay"required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Attitude </label>
-                        <div class="col-sm-12">
-                          <input type="number" class="form-control" name="attitude" min="0" step="1" max="100" placeholder="Masukkan nilai attitude"required>
-                        </div>
                     </div>
 
                       

@@ -39,21 +39,11 @@ $alternatif = array();
 foreach ($result as $row) {
    $alternatif[$row['id_siswa']] = array(
       $row['nama'],
-      $row['shooting'],
-      $row['dribbling'],
-      $row['passing'],
-      $row['ball_control'],
-      $row['heading'],
-      $row['positioning'],
-      $row['ball_position'],
-      $row['transition_movement'],
-      $row['speed'],
-      $row['coordination'],
-      $row['agility'],
-      $row['confidence'],
-      $row['concentration'],
-      $row['fairplay'],
-      $row['attitude']
+      $row['disiplin'],
+      $row['kerjasamatim'],
+      $row['sikapprofesional'],
+      $row['kreatifitas'],
+      $row['kinerja']
    );
 }
 
@@ -92,20 +82,27 @@ foreach ($sample as $id_sample => $value) {
    /*   echo "<br>";*/
 }
 
-
-// PROSES NORMALISASI MATRIX
-//-- inisialisasi nilai normalisasi dengan nilai dari $sample
-$normal = $sample;
 foreach ($kriteria as $id_kriteria => $k) {
-   //-- inisialisasi nilai pembagi tiap kriteria
-   $pembagi = 0;
-   foreach ($alternatif as $id_siswa => $a) {
-      $pembagi += pow($sample[$id_siswa][$id_kriteria], 2);
-   }
-   foreach ($alternatif as $id_alternatif => $a) {
-      $normal[$id_alternatif][$id_kriteria] /= sqrt($pembagi);
-   }
+    $pembagi = 0;
+
+    // hitung nilai pembagi
+    foreach ($alternatif as $id_siswa => $a) {
+        $nilai = $sample[$id_siswa][$id_kriteria] ?? 0; 
+        $pembagi += pow($nilai, 2);
+    }
+
+    // normalisasi
+    foreach ($alternatif as $id_alternatif => $a) {
+        $nilai = $sample[$id_alternatif][$id_kriteria] ?? 0;
+
+        if ($pembagi > 0) {
+            $normal[$id_alternatif][$id_kriteria] = $nilai / sqrt($pembagi);
+        } else {
+            $normal[$id_alternatif][$id_kriteria] = 0; // fallback biar ga division by zero
+        }
+    }
 }
+
 
 //MENAMPILKAN NORMALISASI MATRIX
 /*echo "<br> NORMALISASI MATRIX <br>==================<br>";*/

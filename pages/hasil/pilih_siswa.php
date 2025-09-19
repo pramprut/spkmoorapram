@@ -64,18 +64,6 @@ if ($db->connect_error) {
                         <th>K3</th>
                         <th>K4</th>
                         <th>K5</th>
-                        <th>K6</th>
-                        <th>K7</th>
-                        <th>K8</th>
-                        <th>K9</th>
-                        <th>K10</th>
-                        <th>K11</th>
-                        <th>K12</th>
-                        <th>K13</th>
-                        <th>K14</th>
-                        <th>K15</th>
-
-
                       </tr>
                     </thead>
                     <tbody>
@@ -92,22 +80,11 @@ if ($db->connect_error) {
                           </td>
                           <td><?php echo $no++; ?></td>
                           <td><?= $row['nama'] ?></td>
-                          <td><?= $row['shooting'] ?></td>
-                          <td><?= $row['dribbling'] ?></td>
-                          <td><?= $row['passing'] ?></td>
-                          <td><?= $row['ball_control'] ?></td>
-                          <td><?= $row['heading'] ?></td>
-                          <td><?= $row['positioning'] ?></td>
-                          <td><?= $row['ball_position'] ?></td>
-                          <td><?= $row['transition_movement'] ?></td>
-                          <td><?= $row['speed'] ?></td>
-                          <td><?= $row['coordination'] ?></td>
-                          <td><?= $row['agility'] ?></td>
-                          <td><?= $row['confidence'] ?></td>
-                          <td><?= $row['concentration'] ?></td>
-                          <td><?= $row['fairplay'] ?></td>
-                          <td><?= $row['attitude'] ?></td>
-
+                          <td><?= $row['disiplin'] ?></td>
+                          <td><?= $row['kerjasamatim'] ?></td>
+                          <td><?= $row['sikapprofesional'] ?></td>
+                          <td><?= $row['kreatifitas'] ?></td>
+                          <td><?= $row['kinerja'] ?></td>
                         </tr>
                       <?php
                       }
@@ -128,11 +105,6 @@ if ($db->connect_error) {
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
-
-
-
-
 
 <script type="text/javascript">
   function checkAll(centangall) {

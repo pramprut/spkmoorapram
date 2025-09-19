@@ -15,6 +15,7 @@ if ($db->connect_error) {
 
 
 $id_alter = $_POST['pilih'];
+var_dump($id_alter);
 $jmlh_dipilih = count($id_alter);
 $tanggal =  date("Y-m-d H:i:s");
 

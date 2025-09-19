@@ -74,21 +74,11 @@ $alternatif = array();
 foreach ($result as $row) {
   $alternatif[$row['id_siswa']] = array(
     $row['nama'],
-    $row['shooting'],
-    $row['dribbling'],
-    $row['passing'],
-    $row['ball_control'],
-    $row['heading'],
-    $row['positioning'],
-    $row['ball_position'],
-    $row['transition_movement'],
-    $row['speed'],
-    $row['coordination'],
-    $row['agility'],
-    $row['confidence'],
-    $row['concentration'],
-    $row['fairplay'],
-    $row['attitude']
+    $row['disiplin'],
+    $row['kerjasamatim'],
+    $row['sikapprofesional'],
+    $row['kreatifitas'],
+    $row['kinerja']
   );
 } ?>
 
@@ -163,16 +153,6 @@ foreach ($alternatif as $id_siswa => $value) {
                     <th>K3</th>
                     <th>K4</th>
                     <th>K5</th>
-                    <th>K6</th>
-                    <th>K7</th>
-                    <th>K8</th>
-                    <th>K9</th>
-                    <th>K10</th>
-                    <th>K11</th>
-                    <th>K12</th>
-                    <th>K13</th>
-                    <th>K14</th>
-                    <th>K15</th>
                   </tr>
                 </thead>
                 <tbody style="text-transform: capitalize;">
@@ -187,16 +167,6 @@ foreach ($alternatif as $id_siswa => $value) {
                       echo "<td>" . $alternatif[$id_siswa][3] . "</td>";
                       echo "<td>" . $alternatif[$id_siswa][4] . "</td>";
                       echo "<td>" . $alternatif[$id_siswa][5] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][6] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][7] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][8] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][9] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][10] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][11] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][12] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][13] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][14] . "</td>";
-                      echo "<td>" . $alternatif[$id_siswa][15] . "</td>";
                     }
                     echo "</tr>";
                   }
@@ -220,13 +190,15 @@ foreach ($alternatif as $id_siswa => $value) {
         //-- menyiapkan variable penampung berupa array
         $sample = array();
         //-- melakukan iterasi pengisian array untuk tiap record data yang didapat
-        foreach ($result as $row) {
+        foreach ($alternatif as $id_siswa => $nilai) {
+          // indeks 1-5 adalah nilai kriteria (0 = nama)
+          $i = 1;
           //-- jika array $sample[$row['id_alternatif']] belum ada maka buat baru
           // -- $row['id_alternatif'] adalah id kandidat/alternatif
-          if (!isset($sample[$row['id_siswa']])) {
-            $sample[$row['id_siswa']] = array();
+          foreach ($kriteria as $id_kriteria => $k) {
+            $sample[$id_siswa][$id_kriteria] = $nilai[$i];
+            $i++;
           }
-          $sample[$row['id_siswa']][$row['id_kriteria']] = $row['nilai'];
         }
         ?>
 
@@ -259,16 +231,6 @@ foreach ($sample as $id_sample => $value) {
                     <th>K3</th>
                     <th>K4</th>
                     <th>K5</th>
-                    <th>K6</th>
-                    <th>K7</th>
-                    <th>K8</th>
-                    <th>K9</th>
-                    <th>K10</th>
-                    <th>K11</th>
-                    <th>K12</th>
-                    <th>K13</th>
-                    <th>K14</th>
-                    <th>K15</th>
                   </tr>
                 </thead>
                 <tbody style="text-transform: capitalize;">
@@ -282,12 +244,11 @@ foreach ($sample as $id_sample => $value) {
                     //echo "<th>".$no++."</th>";
                     //echo "<th>".$nama_alt[$k]."</th>";
                     foreach ($kriteria as $k => $v) {
-                      if (is_nan($sample[$a][$k])) {
-                        $sample[$a][$k] = 0;
-                      } elseif (is_infinite($sample[$a][$k])) {
-                        $sample[$a][$k] = 0;
+                      $nilai = $sample[$a][$k] ?? 0;
+                      if (is_nan($nilai) || is_infinite($nilai)) {
+                        $nilai = 0;
                       }
-                      echo "<td>" . round($sample[$a][$k], 2) . "</td>";
+                      echo "<td>" . round($nilai, 2) . "</td>";
                     }
                     echo "</tr>";
                   }
@@ -310,13 +271,19 @@ foreach ($sample as $id_sample => $value) {
           //-- inisialisasi nilai pembagi tiap kriteria
           $pembagi = 0;
           foreach ($alternatif as $id_siswa => $a) {
-            $pembagi += pow($sample[$id_siswa][$id_kriteria], 2);
+            $nilai = $sample[$id_siswa][$id_kriteria] ?? 0;
+            $pembagi += pow($nilai, 2);
           }
           foreach ($alternatif as $id_alternatif => $a) {
-            $normal[$id_alternatif][$id_kriteria] /= sqrt($pembagi);
+            $nilai = $sample[$id_alternatif][$id_kriteria] ?? 0;
+
+            if ($pembagi > 0) {
+              $normal[$id_alternatif][$id_kriteria] = $nilai / sqrt($pembagi);
+            } else {
+              $normal[$id_alternatif][$id_kriteria] = 0;
           }
         }
-
+      }
         /*//MENAMPILKAN NORMALISASI MATRIX
 echo "<br> NORMALISASI MATRIX <br>==================<br>";
 foreach ($normal as $id_normal => $value) {
@@ -344,16 +311,6 @@ foreach ($normal as $id_normal => $value) {
                     <th>K3</th>
                     <th>K4</th>
                     <th>K5</th>
-                    <th>K6</th>
-                    <th>K7</th>
-                    <th>K8</th>
-                    <th>K9</th>
-                    <th>K10</th>
-                    <th>K11</th>
-                    <th>K12</th>
-                    <th>K13</th>
-                    <th>K14</th>
-                    <th>K15</th>
                   </tr>
                 </thead>
                 <tbody style="text-transform: capitalize;">

@@ -43,116 +43,40 @@ $row = mysqli_fetch_assoc($result);
           </div>
         </div>
       <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Shooting </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Shooting</font>
+          <label class="col-sm-2 col-sm-2 control-label">Disiplin </label>
+          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Disiplin</font>
           <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="shooting" min="0" step="1" max="100" value="<?=$row['shooting']?>">
+            <input type="number" class="form-control round-form" name="disiplin" min="0" step="1" max="100" value="<?=$row['disiplin']?>">
           </div>
       </div>
       <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Dribbling </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Dribbling</font>
+          <label class="col-sm-2 col-sm-2 control-label">Kerja Sama Tim </label>
+          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Kerja Sama Tim</font>
           <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="dribbling" min="0" step="1" max="100" value="<?=$row['dribbling']?>">
+            <input type="number" class="form-control round-form" name="kerjasamatim" min="0" step="1" max="100" value="<?=$row['kerjasamatim']?>">
           </div>
       </div>
       <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Passing </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Passing</font>
+          <label class="col-sm-2 col-sm-2 control-label">Sikap Profesional </label>
+          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Sikap Profesional</font>
           <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="passing" min="0" step="1" max="100" value="<?=$row['passing']?>">
+            <input type="number" class="form-control round-form" name="sikapprofesional" min="0" step="1" max="100" value="<?=$row['sikapprofesional']?>">
           </div>
       </div>
       <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Ball Control </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Ball Control</font>
+          <label class="col-sm-2 col-sm-2 control-label">Kreatifitas </label>
+          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Kreatifitas</font>
           <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="ball_control" min="0" step="1" max="100" value="<?=$row['ball_control']?>">
+            <input type="number" class="form-control round-form" name="kreatifitas" min="0" step="1" max="100" value="<?=$row['kreatifitas']?>">
           </div>
       </div>
       <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Heading </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Heading</font>
+          <label class="col-sm-2 col-sm-2 control-label">Kinerja </label>
+          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Kinerja</font>
           <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="heading" min="0" step="1" max="100" value="<?=$row['heading']?>">
+            <input type="number" class="form-control round-form" name="kinerja" min="0" step="1" max="100" value="<?=$row['kinerja']?>">
           </div>
       </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Positioning </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Positioning</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="positioning" min="0" step="1" max="100" value="<?=$row['positioning']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Ball Position </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Ball Position</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="ball_position" min="0" step="1" max="100" value="<?=$row['ball_position']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Transition Movement </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Transition Movement</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="transition_movement" min="0" step="1" max="100" value="<?=$row['transition_movement']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Speed </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Speed</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="speed" min="0" step="1" max="100" value="<?=$row['speed']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Coordination </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Coordination</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="coordination" min="0" step="1" max="100" value="<?=$row['coordination']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Agility </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Agility</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="agility" min="0" step="1" max="100" value="<?=$row['agility']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Confidence </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Confidence</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="confidence" min="0" step="1" max="100" value="<?=$row['confidence']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Concentration </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Concentration</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="concentration" min="0" step="1" max="100" value="<?=$row['concentration']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Fairplay </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Fairplay</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="fairplay" min="0" step="1" max="100" value="<?=$row['fairplay']?>">
-          </div>
-      </div>
-      <div class="form-group">
-          <label class="col-sm-2 col-sm-2 control-label">Attitude </label>
-          <br><font size="2"; style="margin-left: 9px; color: Grey";>Edit Nilai Attitude</font>
-          <div class="col-sm-12">
-            <input type="number" class="form-control round-form" name="attitude" min="0" step="1" max="100" value="<?=$row['attitude']?>">
-          </div>
-      </div>
-        <div class="form-group">
-          <div class="col-sm-12" style="text-align: center;">
-            <button type="submit" class="btn btn-danger">Masukan</button>
-            <button type="button" class="btn btn-success" onclick="history.back();">Kembali</button>
-          </div>
-        </div>
       
     </div>
     

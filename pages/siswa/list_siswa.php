@@ -45,16 +45,6 @@
                        <th style="text-align:center">K3</th>
                        <th style="text-align:center">K4</th>
                        <th style="text-align:center">K5</th>
-                       <th style="text-align:center">K6</th>
-                       <th style="text-align:center">K7</th>
-                       <th style="text-align:center">K8</th>
-                       <th style="text-align:center">K9</th>
-                       <th style="text-align:center">K10</th>
-                       <th style="text-align:center">K11</th>
-                       <th style="text-align:center">K12</th>
-                       <th style="text-align:center">K13</th>
-                       <th style="text-align:center">K14</th>
-                       <th style="text-align:center">K15</th>
 
                        <!-- <?php
                             include "./lib/koneksi.php";
@@ -86,21 +76,11 @@
                          <!-- <td><?= $row['id_siswa'] ?></td> -->
                          <td style="text-align:center"><?php echo $no++; ?></td>
                          <td style="text-align:center"><?= $row['nama'] ?></td>
-                         <td style="text-align:center"><?= $row['shooting'] ?></td>
-                         <td style="text-align:center"><?= $row['dribbling'] ?></td>
-                         <td style="text-align:center"><?= $row['passing'] ?></td>
-                         <td style="text-align:center"><?= $row['ball_control'] ?></td>
-                         <td style="text-align:center"><?= $row['heading'] ?></td>
-                         <td style="text-align:center"><?= $row['positioning'] ?></td>
-                         <td style="text-align:center"><?= $row['ball_position'] ?></td>
-                         <td style="text-align:center"><?= $row['transition_movement'] ?></td>
-                         <td style="text-align:center"><?= $row['speed'] ?></td>
-                         <td style="text-align:center"><?= $row['coordination'] ?></td>
-                         <td style="text-align:center"><?= $row['agility'] ?></td>
-                         <td style="text-align:center"><?= $row['confidence'] ?></td>
-                         <td style="text-align:center"><?= $row['concentration'] ?></td>
-                         <td style="text-align:center"><?= $row['fairplay'] ?></td>
-                         <td style="text-align:center"><?= $row['attitude'] ?></td>
+                         <td style="text-align:center"><?= $row['disiplin'] ?></td>
+                         <td style="text-align:center"><?= $row['kerjasamatim'] ?></td>
+                         <td style="text-align:center"><?= $row['sikapprofesional'] ?></td>
+                         <td style="text-align:center"><?= $row['kreatifitas'] ?></td>
+                         <td style="text-align:center"><?= $row['kinerja'] ?></td>
                          <?php
                           if ($_SESSION['namauser'] == 'admin') {
                           ?>
