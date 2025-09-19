@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SSB PSAD Brawijaya Surabaya</title>
+  <title>SPK Puri Surya Jaya</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -136,9 +136,9 @@
             <div class="card-body">
               <img src="dist/img/PSAD.jpeg" class="img-fluid" alt="..." style="width: 165px;float:left; margin-top:40px; margin-right:25px;">
               <div class="row">
-                <h3>Selamat datang di Sistem Pendukung Keputusan (SPK) Pemilihan Pemain Terbaik Bedasarkan Skill & Intelegency pada SSB PSAD Brawijaya Surabaya menggunakan metode MOORA (Multi-Objective Optimization on the basis of Ratio Analysis).</h3>
+                <h3>Selamat Datang di Sistem Pendukung Keputusan (SPK) Penilaian Kinerja Karyawan Dalam Mendukung Keputusan Kenaikan Jabatan Menggunakan Metode MOORA (Multi-Objective Optimization on the basis of Ratio Analysis).</h3>
                 <hr>
-                <h4>Apabila ingin merubah data, melihat hasil perhitungan,dll. Silahkan login terlebih dahulu.</h4>
+                <h4>Apabila ingin merubah data, melihat hasil perhitungan, dll. Silahkan login terlebih dahulu.</h4>
               </div>
               <!-- /.row -->
 
@@ -164,7 +164,7 @@
 <!-- /.control-sidebar -->
 </div>
 <footer class="main-footer">
-  <strong>Copyright &copy; <a href="#">SSB PSAD Brawijaya</a>.</strong>
+  <strong>Copyright &copy; <a href="#">Puri Surya Jaya</a>.</strong>
   All rights reserved.
 </footer>
 </div>

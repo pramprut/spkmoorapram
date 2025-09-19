@@ -383,7 +383,7 @@ if ($_SESSION['level'] == "") {
     <!-- /.control-sidebar -->
 
     <footer class="main-footer">
-      <strong>Copyright &copy; <a href="#">SSB PSAD Brawijaya</a>.</strong>
+      <strong>Copyright &copy; <a href="#">SPK Puri Surya Jaya</a>.</strong>
       All rights reserved.
     </footer>
   </div>
