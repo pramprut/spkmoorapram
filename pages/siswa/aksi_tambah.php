@@ -67,7 +67,7 @@ elseif ($kreatifitas >= 80 && $kreatifitas <= 89) {
 	$nkreatifitas = 4;
 }
 elseif ($kreatifitas >= 70 && $kreatifitas <= 79) {
-	$nball_control = 3;
+	$nkreatifitas = 3;
 }
 elseif ($kreatifitas >= 60 && $kreatifitas <= 69) {
 	$nkreatifitas = 2;
@@ -105,23 +105,23 @@ if ($koneksi->query($sql) === TRUE) {
               	$id_siswa = $hasil['id_siswa'];
               	
               	//insert data to table nilai.
-              	$sshooting = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
+              	$sdisiplin = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
 						VALUES ('1', '$id_siswa', '$ndisiplin')";
 				$koneksi->query($sdisiplin);
 
-				$sdribbling = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
+				$skerjasamatim = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
 						VALUES ('2', '$id_siswa', '$nkerjasamatim')";
 				$koneksi->query($skerjasamatim);
 
-				$spassing = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
+				$ssikapprofesional = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
 						VALUES ('3', '$id_siswa', '$nsikapprofesional')";
 				$koneksi->query($ssikapprofesional);
 
-				$sball_control = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
+				$skreatifitas = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
 						VALUES ('4', '$id_siswa', '$nkreatifitas')";
 				$koneksi->query($skreatifitas);
 
-				$sheading = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
+				$skinerja = "INSERT INTO tabel_nilai (id_kriteria, id_siswa, nilai)
 						VALUES ('5', '$id_siswa', '$nkinerja')";
 				$koneksi->query($skinerja);
 

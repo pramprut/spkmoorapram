@@ -190,15 +190,13 @@ foreach ($alternatif as $id_siswa => $value) {
         //-- menyiapkan variable penampung berupa array
         $sample = array();
         //-- melakukan iterasi pengisian array untuk tiap record data yang didapat
-        foreach ($alternatif as $id_siswa => $nilai) {
-          // indeks 1-5 adalah nilai kriteria (0 = nama)
-          $i = 1;
+        foreach ($result as $row) {
           //-- jika array $sample[$row['id_alternatif']] belum ada maka buat baru
           // -- $row['id_alternatif'] adalah id kandidat/alternatif
-          foreach ($kriteria as $id_kriteria => $k) {
-            $sample[$id_siswa][$id_kriteria] = $nilai[$i];
-            $i++;
+          if (!isset($sample[$row['id_siswa']])) {
+            $sample[$row['id_siswa']] = array();
           }
+          $sample[$row['id_siswa']][$row['id_kriteria']] = $row['nilai'];
         }
         ?>
 
@@ -243,12 +241,14 @@ foreach ($sample as $id_sample => $value) {
                     echo "<tr>";
                     //echo "<th>".$no++."</th>";
                     //echo "<th>".$nama_alt[$k]."</th>";
+                    // var_dump($alternatif);
                     foreach ($kriteria as $k => $v) {
-                      $nilai = $sample[$a][$k] ?? 0;
-                      if (is_nan($nilai) || is_infinite($nilai)) {
-                        $nilai = 0;
+                      if (is_nan($sample[$a][$k])) {
+                        $sample[$a][$k] = 0;
+                      } elseif (is_infinite($sample[$a][$k])) {
+                        $sample[$a][$k] = 0;
                       }
-                      echo "<td>" . round($nilai, 2) . "</td>";
+                      echo "<td>" . round($sample[$a][$k], 2) . "</td>";
                     }
                     echo "</tr>";
                   }
