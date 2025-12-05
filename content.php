@@ -135,7 +135,7 @@ if ($_SESSION['level'] == "") {
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-edit"></i>
                   <p>
-                    Data Siswa
+                    Data Karyawan
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
@@ -143,7 +143,7 @@ if ($_SESSION['level'] == "") {
                   <li class="nav-item">
                     <a href="content.php?module=list_siswa" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>List Siswa</p>
+                      <p>List Karyawan</p>
                     </a>
                   </li>
                 </ul>
@@ -212,7 +212,7 @@ if ($_SESSION['level'] == "") {
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-edit"></i>
                     <p>
-                      Data Siswa
+                      Data Karyawan
                       <i class="fas fa-angle-left right"></i>
                     </p>
                   </a>
@@ -220,7 +220,7 @@ if ($_SESSION['level'] == "") {
                     <li class="nav-item">
                       <a href="content.php?module=list_siswa" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>List Siswa</p>
+                        <p>List Karyawan</p>
                       </a>
                     </li>
                   </ul>
