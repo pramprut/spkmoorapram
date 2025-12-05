@@ -5,7 +5,7 @@
      <div class="container-fluid">
        <div class="row mb-2">
          <div class="col-sm-6">
-           <h1 class="m-0">Siswa</h1>
+           <h1 class="m-0">Karyawan</h1>
          </div><!-- /.col -->
        </div><!-- /.row -->
      </div><!-- /.container-fluid -->
@@ -21,7 +21,7 @@
          <section class="col">
            <div class="card card-info">
              <div class="card-header">
-               <h3 class="card-title">List Siswa</h3>
+               <h3 class="card-title">List Karyawan</h3>
              </div>
              <!-- /.card-header -->
              <div class="card-body">
