@@ -9,16 +9,16 @@ $sikapprofesional 	= $_POST['sikapprofesional'];
 $kreatifitas 		= $_POST['kreatifitas'];
 $kinerja 			= $_POST['kinerja'];
 
-if ($disiplin >= 90) {
+if ($disiplin >= 91) {
 	$ndisiplin = 5;
 }
-elseif ($disiplin >= 80 && $disiplin <= 89) {
+elseif ($disiplin >= 76 && $disiplin <= 90) {
 	$ndisiplin = 4;
 }
-elseif ($disiplin >= 70 && $disiplin <= 79) {
+elseif ($disiplin >= 61 && $disiplin <= 75) {
 	$ndisiplin = 3;
 }
-elseif ($disiplin >= 60 && $disiplin <= 69) {
+elseif ($disiplin >= 51 && $disiplin <= 60) {
 	$ndisiplin = 2;
 }
 elseif ($disiplin >= 50) {
@@ -26,16 +26,16 @@ elseif ($disiplin >= 50) {
 }
 
 
-if ($kerjasamatim >= 90) {
+if ($kerjasamatim >= 91) {
 	$nkerjasamatim = 5;
 }
-elseif ($kerjasamatim >= 80 && $kerjasamatim <= 89) {
+elseif ($kerjasamatim >= 76 && $kerjasamatim <= 90) {
 	$nkerjasamatim = 4;
 }
-elseif ($kerjasamatim >= 70 && $kerjasamatim <= 79) {
+elseif ($kerjasamatim >= 61 && $kerjasamatim <= 75) {
 	$nkerjasamatim = 3;
 }
-elseif ($kerjasamatim >= 60 && $kerjasamatim <= 69) {
+elseif ($kerjasamatim >= 51 && $kerjasamatim <= 60) {
 	$nkerjasamatim = 2;
 }
 elseif ($kerjasamatim >= 50) {
@@ -43,16 +43,16 @@ elseif ($kerjasamatim >= 50) {
 }
 
 
-if ($sikapprofesional >= 90) {
+if ($sikapprofesional >= 91) {
 	$nsikapprofesional = 5;
 }
-elseif ($sikapprofesional >= 80 && $sikapprofesional <= 89) {
+elseif ($sikapprofesional >= 76 && $sikapprofesional <= 90) {
 	$nsikapprofesional = 4;
 }
-elseif ($sikapprofesional >= 70 && $sikapprofesional <= 79) {
+elseif ($sikapprofesional >= 61 && $sikapprofesional <= 75) {
 	$nsikapprofesional = 3;
 }
-elseif ($sikapprofesional >= 60 && $sikapprofesional <= 69) {
+elseif ($sikapprofesional >= 51 && $sikapprofesional <= 60) {
 	$nsikapprofesional = 2;
 }
 elseif ($sikapprofesional >= 50) {
@@ -60,16 +60,16 @@ elseif ($sikapprofesional >= 50) {
 }
 
 
-if ($kreatifitas >= 90) {
+if ($kreatifitas >= 91) {
 	$nkreatifitas = 5;
 }
-elseif ($kreatifitas >= 80 && $kreatifitas <= 89) {
+elseif ($kreatifitas >= 76 && $kreatifitas <= 90) {
 	$nkreatifitas = 4;
 }
-elseif ($kreatifitas >= 70 && $kreatifitas <= 79) {
+elseif ($kreatifitas >= 61 && $kreatifitas <= 75) {
 	$nkreatifitas = 3;
 }
-elseif ($kreatifitas >= 60 && $kreatifitas <= 69) {
+elseif ($kreatifitas >= 51 && $kreatifitas <= 60) {
 	$nkreatifitas = 2;
 }
 elseif ($kreatifitas >= 50) {
@@ -77,16 +77,16 @@ elseif ($kreatifitas >= 50) {
 }
 
 
-if ($kinerja >= 90) {
+if ($kinerja >= 91) {
 	$nkinerja = 5;
 }
-elseif ($kinerja >= 80 && $kinerja <= 89) {
+elseif ($kinerja >= 76 && $kinerja <= 90) {
 	$nkinerja = 4;
 }
-elseif ($kinerja >= 70 && $kinerja <= 79) {
+elseif ($kinerja >= 61 && $kinerja <= 75) {
 	$nkinerja = 3;
 }
-elseif ($kinerja >= 60 && $kinerja <= 69) {
+elseif ($kinerja >= 51 && $kinerja <= 60) {
 	$nkinerja = 2;
 }
 elseif ($kinerja >= 50) {
